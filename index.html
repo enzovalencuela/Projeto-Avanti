@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleMobile.css" />
+    <!--LINK DO SWIPER-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--NAV DA PÁGINA-------------------------------------------------------------------------------->
+    <nav>
+      <div id="div-resposta"></div>
+      <div class="div-span">
+        <p>
+          Ganhe <b>R$10,00</b> de desconto no seu primeiro pedido. Utilize o
+          cupom <span>DESCONTO10</span>
+        </p>
+      </div>
+      <div class="div-nav">
+        <div class="div-search">
+          <img id="img-menu" src="./img/menu.svg" alt="" />
+          <img src="./img/logo.svg" alt="" class="logo" />
+          <form class="form-input">
+            <input
+              id="nav-form__input"
+              type="text"
+              placeholder="Digite aqui o que você procura"
+            />
+            <button type="button" onclick="pesquisar()">
+              <img src="./img/search.svg" alt="" />
+            </button>
+          </form>
+          <div class="div-user">
+            <img id="icon_person" src="./img/icon_person.svg" alt="" />
+            <p>Olá,<br />Nome do cliente!</p>
+            <img src="./img/car.svg" alt="" />
+          </div>
+        </div>
+        <ul class="div-ul">
+          <button id="todasCategorias">
+            <img class="imagem-normal" src="./img/menu.svg" alt="" />
+            <img class="imagem-hover" src="./img/menuHover.svg" alt="" />
+            Todas as categorias
+          </button>
+          <li class="li-departamento" data-departamento="1">Departamento</li>
+          <li class="li-departamento" data-departamento="2">Departamento</li>
+          <li class="li-departamento" data-departamento="3">Departamento</li>
+          <li class="li-departamento" data-departamento="4">Departamento</li>
+          <li class="li-departamento" data-departamento="5">Departamento</li>
+          <li class="li-departamento" data-departamento="6">Departamento</li>
+          <li class="li-departamento" data-departamento="7">Departamento</li>
+          <li class="li-departamento" data-departamento="8">Departamento</li>
+          <div id="menu-categorias" class="oculto">
+            <div class="menu-conteudo">
+              <ul class="departamentos">
+                <li class="departamento" data-departamento="1">
+                  Departamento 1
+                  <img src="./img/arrow.svg" alt="Seta" />
+                </li>
+                <li class="departamento" data-departamento="2">
+                  Departamento 2
+                  <img src="./img/arrow.svg" alt="Seta" />
+                </li>
+                <li class="departamento" data-departamento="3">
+                  Departamento 3
+                  <img src="./img/arrow.svg" alt="Seta" />
+                </li>
+                <li class="departamento" data-departamento="4">
+                  Departamento 4
+                  <img src="./img/arrow.svg" alt="Seta" />
+                </li>
+                <li class="departamento" data-departamento="5">
+                  Departamento 5
+                  <img src="./img/arrow.svg" alt="Seta" />
+                </li>
+                <li class="departamento" data-departamento="6">
+                  Departamento 6
+                  <img src="./img/arrow.svg" alt="Seta" />
+                </li>
+                <li class="departamento" data-departamento="7">
+                  Departamento 7
+                  <img src="./img/arrow.svg" alt="Seta" />
+                </li>
+                <li class="departamento" data-departamento="8">
+                  Departamento 8
+                  <img src="./img/arrow.svg" alt="Seta" />
+                </li>
+              </ul>
+              <div class="categorias-container"></div>
+              <div class="img-categorias">
+                <h3>Confira os Produtos <b>Que acabaram De chegar</b></h3>
+                <button>Ver todos</button>
+              </div>
+            </div>
+          </div>
+          <div id="categorias-exibidas"></div>
+        </ul>
+      </div>
+    </nav>
+    <!--SECTION DO OUTDOOR-------------------------------------------------------------------------------->
+    <section class="section-outdoor">
+      <img src="./img/cadeira.svg" alt="" />
+      <div class="div-outdoor__text">
+        <h2><b>SUPER</b> SALE</h2>
+        <p>Itens selecionados com até</p>
+        <h3>50% off</h3>
+      </div>
+    </section>
+    <!--SECTION DE PRODUTOS-------------------------------------------------------------------------------->
+    <section class="section-produtos swiper" id="section-produtos">
+      <div class="div-produtos__title">
+        <h2>Lançamentos</h2>
+        <button>Ver mais</button>
+      </div>
+      <div class="card-wrapper">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span class="parcelamento-span"
+                >Ou em até <b>10x de R$ 7,90</b></span
+              >
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div>
+          <img
+            class="swiper-button swiper-button-prev"
+            src="./img/arrowLeft.svg"
+            alt=""
+            style="left: -3px; top: 50%"
+          />
+        </div>
+        <div>
+          <img
+            class="swiper-button swiper-button-next"
+            src="./img/arrowRight.svg"
+            alt=""
+            style="right: -3px; top: 50%"
+          />
+        </div>
+      </div>
+    </section>
+    <!--SECTION DE FOTO E TEXTO---------------------------------------------------------------------------------->
+    <section class="section-foto">
+      <div class="div-foto__img">
+        <img src="./img/caneca.svg" alt="" />
+      </div>
+      <div class="div-foto__text">
+        <h2>Lorem ipsum</h2>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+      </div>
+    </section>
+    <!--SEGUNDA SECTION DE FOTO E TEXTO---------------------------------------------------------------------------------->
+    <section class="section-foto2">
+      <div class="div-foto__text2">
+        <h2>Lorem ipsum</h2>
+        <div class="div-text-location">
+          <img src="./img/circulo_location.svg" alt="" />
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+        <div class="div-text-location">
+          <img src="./img/circulo_location.svg" alt="" />
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+        <div class="div-text-location">
+          <img src="./img/circulo_location.svg" alt="" />
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+      </div>
+      <div class="div-foto__img2">
+        <img src="./img/segundaCaneca.svg" alt="" />
+      </div>
+    </section>
+    <!--TERCEIRA SECTION DE FOTO E TEXTO---------------------------------------------------------------------------------->
+    <section class="section-foto">
+      <div class="div-foto__img">
+        <img src="./img/caneca.svg" alt="" />
+      </div>
+      <div class="div-foto__text">
+        <h2>Lorem ipsum</h2>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+      </div>
+    </section>
+    <!--SEGUNDA SECTION DE PRODUTOS-------------------------------------------------------------------------------->
+    <section class="section-produtos swiper" id="section-produtos2">
+      <div class="div-produtos__title">
+        <h2>Lançamentos</h2>
+        <button>Ver mais</button>
+      </div>
+      <div class="card-wrapper">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+          <li class="card-item swiper-slide">
+            <span class="span-new">novo</span>
+            <img src="./img/modelo.svg" alt="" />
+            <div class="produto__text">
+              <span class="off">10% off</span>
+              <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+              <p>R$ 100,00</p>
+              <h4>R$79,90</h4>
+              <span>Ou em até <b>10x de R$ 7,90</b></span>
+            </div>
+            <button>Comprar</button>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div>
+          <img
+            class="swiper-button swiper-button-prev"
+            src="./img/arrowLeft.svg"
+            alt=""
+            style="left: -3px; top: 50%"
+          />
+        </div>
+        <div>
+          <img
+            class="swiper-button swiper-button-next"
+            src="./img/arrowRight.svg"
+            alt=""
+            style="right: -3px; top: 50%"
+          />
+        </div>
+      </div>
+    </section>
+    <!--SECTION BANNER-------------------------------------------------------------------------------->
+    <section class="section-banner">
+      <div>
+        <p>
+          Entre em contato conosco e verifique a disponibilidade para sua
+          região!
+        </p>
+      </div>
+    </section>
+    <!--SECTION CADASTRO  -------------------------------------------------------------------------------->
+    <section class="section-cadastro">
+      <div class="cadastro-text">
+        <p>Cadastre-se na nossa <b>newsletter</b></p>
+      </div>
+      <form class="div-cadastro">
+        <input type="text" placeholder="Digite seu nome" />
+        <input type="email" placeholder="Digite seu e-mail" />
+        <div class="checkbox">
+          <input type="checkbox" />
+          <p>Estou de acordo com a <a href="/">Política de Privacidade</a></p>
+        </div>
+        <button type="button">Cadastrar</button>
+      </form>
+    </section>
+    <!--FOOTER-------------------------------------------------------------------------------->
+    <footer>
+      <div class="footer1">
+        <div class="div-footer">
+          <div class="div-logo-social">
+            <img src="./img/logo.svg" alt="" />
+            <div class="social-media">
+              <a href=""> <img src="./img/instagram.svg" alt="" /></a>
+              <a href=""> <img src="./img/facebook.svg" alt="" /></a>
+              <a href=""> <img src="./img/youtube.svg" alt="" /> </a>
+              <a href=""> <img src="./img/tiktok.svg" alt="" /> </a>
+            </div>
+          </div>
+          <div id="div-links" class="div-links institucional">
+            <h3>Institucional</h3>
+            <p>Sobre Nós</p>
+            <p>Nossas Lojas</p>
+            <p>Privacidade e Segurança</p>
+            <p>Termos e Condições</p>
+          </div>
+          <div id="div-links" class="div-links central-ajuda">
+            <h3>Central de ajuda</h3>
+            <p>Fale Conosco</p>
+            <p>Frete e Entrega</p>
+            <p>Trocas e Devoluções</p>
+            <p>Formas de Pagamento</p>
+            <p>FAQ</p>
+          </div>
+          <div id="div-links" class="div-links atendimento">
+            <h3>Atendimento</h3>
+            <p><b>Telefone:</b> (00) 1234-5678</p>
+            <p><b>E-mail:</b> exemplo@exemplo.com.br</p>
+            <p><b>Horário de atendimento:</b></p>
+            <p>Segunda a Sábado: 07h00 às 23h00</p>
+            <p>Domingos e Feriados: 07h00 às 21h00</p>
+          </div>
+        </div>
+        <div class="meios-pagamento">
+          <img src="./img/amex.svg" alt="" />
+          <img src="./img/mastercard.svg" alt="" />
+          <img src="./img/visa.svg" alt="" />
+          <img src="./img/hipercard.svg" alt="" />
+          <img src="./img/elo.svg" alt="" />
+          <img src="./img/b.svg" alt="" />
+          <img src="./img/paypal.svg" alt="" />
+          <img src="./img/pix.svg" alt="" />
+          <img src="./img/boleto.svg" alt="" />
+        </div>
+      </div>
+      <div class="div-footer2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+        <div class="parceiros">
+          <img class="lets-encrypt" src="./img/lets-encrypt.svg" alt="" />
+          <img class="vtex-pci" src="./img/vtex-pci.svg" alt="" />
+          <img class="logo" src="./img/logo.svg" alt="" />
+          <img class="vtex-logo" src="./img/VTEX_Logo.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+    <!--LINK DO SWIPER-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
