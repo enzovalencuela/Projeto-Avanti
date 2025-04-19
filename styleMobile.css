@@ -96,7 +96,14 @@
     padding: 60px 20px;
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
+    height: 220px;
+  }
+
+  .li-departamento {
+    text-align: center;
   }
 
   #todasCategorias {
@@ -137,6 +144,10 @@
     font-size: 12px;
   }
 
+  .coluna li a:hover {
+    font-size: 12px;
+  }
+
   .img-categorias {
     display: none;
   }
@@ -144,7 +155,7 @@
   #categorias-exibidas {
     width: 100vw;
     height: auto;
-    top: 138px;
+    top: 158px;
     left: 0px;
     padding: 15px;
     flex-direction: row;
