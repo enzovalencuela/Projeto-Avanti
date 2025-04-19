@@ -33,6 +33,7 @@
 
   #img-menu {
     display: block;
+    z-index: 4000;
   }
 
   .form-input {
@@ -89,7 +90,64 @@
   }
 
   .div-ul {
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px;
+    padding: 60px 20px;
     display: none;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #todasCategorias {
+    display: none;
+    img {
+      display: none;
+    }
+  }
+
+  /*!PRA CIMA JÁ FOI ESTILIZADO -------------------------------------------------------------------------------------*/
+
+  #menu-categorias {
+    width: 100vw;
+    height: auto;
+    top: 152px;
+    left: -20px;
+  }
+
+  .menu-conteudo {
+    padding: 15px;
+  }
+
+  .departamentos {
+    width: 100%;
+  }
+
+  .categorias-colunas {
+    gap: 10px;
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .coluna {
+    width: 100px;
+  }
+
+  .coluna li a {
+    font-size: 12px;
+  }
+
+  .img-categorias {
+    display: none;
+  }
+
+  #categorias-exibidas {
+    width: 100vw;
+    height: auto;
+    top: 138px;
+    left: 0px;
+    padding: 15px;
+    flex-direction: row;
   }
 
   /*?SECTION DE OUTDOOR -------------------------------------------------------------------------------------*/

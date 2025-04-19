@@ -357,12 +357,7 @@ nav {
   flex-wrap: wrap; /* Permite que as categorias quebrem para a próxima linha */
 }
 
-#categorias-exibidas .categorias-colunas ul.coluna {
-  width: 200px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 
 /*?SECTION DE OUTDOOR -------------------------------------------------------------------------------------*/
 

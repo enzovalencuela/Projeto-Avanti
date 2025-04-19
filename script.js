@@ -638,3 +638,24 @@ titulos.forEach((titulo) => {
     divLinks.classList.toggle("aberto");
   });
 });
+
+//FUNÇÃO DO MENU NO MOBILE--------------------------------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.getElementById("img-menu");
+  const menu = document.querySelector(".div-ul");
+
+  if (menuIcon && menu) {
+    menuIcon.addEventListener("click", function () {
+      // Verifica se o menu está atualmente visível ou não
+      const isMenuVisible = menu.style.display === "grid";
+
+      // Se o menu estiver visível, esconde. Se não, mostra.
+      if (isMenuVisible) {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "grid";
+      }
+    });
+  }
+});
