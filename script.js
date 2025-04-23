@@ -560,7 +560,7 @@ function exibirCategoriasNavegacao(departamentoId) {
 
   if (categorias[departamentoId]) {
     let categoriasHTML = `
-      <div class="categorias-container-left"> 
+      <div class="categorias-container-left">
         <div class="departamento-titulo">
           <h3>Departamento</h3>
         </div>
@@ -578,7 +578,7 @@ function exibirCategoriasNavegacao(departamentoId) {
       </div>
       <div class="categorias-container-right">
         <div class="img-categorias">
-          <h3>Confira os 
+          <h3>Confira os
             Produtos
             <b>Que acabaram
               De chegar</b>
@@ -594,6 +594,24 @@ function exibirCategoriasNavegacao(departamentoId) {
     categoriasExibidas.classList.add("mostrar");
   }
 }
+
+// Adiciona event listener para o mouseleave no container de categorias
+categoriasExibidas.addEventListener("mouseleave", () => {
+  categoriasExibidas.classList.remove("mostrar");
+});
+
+// Adiciona event listener para o mouseleave nos elementos de departamento
+departamentos.forEach((departamento) => {
+  departamento.addEventListener("mouseleave", () => {
+    // Adiciona um pequeno atraso para permitir que o mouse entre no container de categorias
+    setTimeout(() => {
+      // Verifica se o mouse ainda não está dentro do container de categorias
+      if (!categoriasExibidas.matches(":hover")) {
+        categoriasExibidas.classList.remove("mostrar");
+      }
+    }, 100); // Ajuste o valor do atraso conforme necessário
+  });
+});
 
 //FUNÇÃO DE CARROSEL--------------------------------------------------------------------------------------
 

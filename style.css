@@ -912,6 +912,10 @@ footer {
   gap: 10px;
 }
 
+#div-links h3 img {
+  display: none;
+}
+
 /*SEGUNDA PARTE DO FOOTER---------------------------------------------------*/
 .div-footer2 {
   display: flex;

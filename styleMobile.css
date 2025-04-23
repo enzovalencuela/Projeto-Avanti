@@ -219,9 +219,6 @@
     }
   }
 
-  /*!PRA CIMA JÁ FOI ESTILIZADO------------------------------------------------------------*/
-
-  /*?SECTION DE PRODUTOS -------------------------------------------------------------------------------------*/
   /*?SECTION DE PRODUTOS -------------------------------------------------------------------------------------*/
   .section-produtos {
     padding: 60px 0px;
@@ -462,6 +459,8 @@
   }
 
   #div-links h3 {
+    display: flex;
+    justify-content: space-between;
     padding: 16px;
     display: flex;
     cursor: pointer;
@@ -469,6 +468,10 @@
     padding-block: 16px;
     border: 1px solid #dddddd;
     width: 100vw;
+  }
+
+  #div-links h3 img {
+    display: block;
   }
 
   .aberto.div-links p {
