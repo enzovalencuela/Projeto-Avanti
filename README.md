@@ -41,21 +41,18 @@ Este projeto é uma página web de uma loja de roupas chamada **AVANTI**, criada
 ## 📷 Imagens do Projeto
 
 ### 🏠 Página Principal (Home)
-> _Adicione aqui uma imagem mostrando o topo da página com o carrossel._
 
 ![Página Home](https://github.com/user-attachments/assets/0748e474-c4e1-43ef-80cf-b7b7f6cd6cc9)
 
 ---
 
 ### 🔍 Resultado da Pesquisa
-> _Imagem demonstrando o que aparece ao pesquisar algo no campo de input._
 
 ![Pesquisa](https://github.com/user-attachments/assets/9c074b47-6fcd-4fd8-8b4e-5d7ab6d1d083)
 
 ---
 
 ### 📂 Menu de Categorias
-> _Imagem do menu de categorias de produtos aberto._
 
 ![Categorias](https://github.com/user-attachments/assets/7a9aefba-fd9b-4c22-985d-f9bf7100b0ea)
 
